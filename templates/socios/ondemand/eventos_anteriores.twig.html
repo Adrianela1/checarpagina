@@ -1,0 +1,66 @@
+{% extends 'html_structure/baseContent.twig.html' %}
+
+{# Nombre de Página #}
+{% block page %}Acerca de Nostros{% endblock %}
+
+{# Css extras #}
+{% block css_extras %}{% endblock %}
+
+{# Contenido de Página #}
+{% block page_contents %}
+<main class="main-content">
+	    	<section class="section bg-gray">
+				<div class="container">
+					<header class="section-header">
+						<small>A M E C</small>
+						<h2>
+							Eventos Anteriores
+						</h2>
+						<img src="{{ asset('img/asofarma-logo.png') }}" width="280" class="mb-3"><br/>
+							<img src="{{ asset('img/myrbetric.png') }}" width="200" class="m-3"><img src="{{ asset('img/mictasol.png') }}" width="200" class="m-3"><img src="{{ asset('img/vesicare.png') }}" width="200" class="m-3">
+						<hr>
+					</header>
+					<div class="row gap-y">
+						<div class="col-md-6 col-lg-4">
+							<div class="card d-block border hover-shadow-6 mb-6">
+								<img class="card-img-top" src="{{ asset('img/terapia-hormonal.jpg') }}" alt="Card image cap">
+								<div class="p-6 text-center">
+									<p class="small-5 text-lighter text-uppercase ls-2 fw-400">Sesión Sabatina</p>
+									<p><span class="iconbox iconbox-outline iconbox-xs"><i class="fa fa-calendar"></i></span> 12 de Marzo 2022</p>
+									<p>Actualidades en la terapia hormonal de la menopausia</p>
+									<h6 class="mb-4">
+										"Comorbilidad en menopausia, bases moleculares y clínicas"
+									</h6>
+									<p class="small-2"><a href="{{ path('get.socios.ondemand.evento_12_03_22')}}">Leer más ></a></p>
+								</div>
+							</div>
+						</div>
+						<!--
+						<div class="col-md-6 col-lg-4">
+							<div class="card d-block border hover-shadow-6 mb-6">
+								<a href="#"><img class="card-img-top" src="../assets/img/thumb/2.jpg" alt="Card image cap"></a>
+								<div class="p-6 text-center">
+									<p><a class="small-5 text-lighter text-uppercase ls-2 fw-400" href="#">Marketing</a></p>
+									<h5 class="mb-0"><a class="text-dark" href="#">Top 5 brilliant content marketing strategies</a></h5>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-4">
+							<div class="card d-block border hover-shadow-6 mb-6">
+								<a href="#"><img class="card-img-top" src="../assets/img/thumb/3.jpg" alt="Card image cap"></a>
+								<div class="p-6 text-center">
+									<p><a class="small-5 text-lighter text-uppercase ls-2 fw-400" href="#">Design</a></p>
+									<h5 class="mb-0"><a class="text-dark" href="#">Best practices for minimalist design with example</a></h5>
+								</div>
+							</div>
+						</div> -->
+					</div>
+				</div>
+			</section>
+	    </main>
+
+{% endblock %}
+
+{# js extras #}
+{% block js_extras %}
+{% endblock %}

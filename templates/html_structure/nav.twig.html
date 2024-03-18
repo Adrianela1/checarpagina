@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg navbar-dark navbar-stick-dark" data-navbar="sticky">
+			<div class="container">
+				<div class="navbar-left">
+					<button class="navbar-toggler" type="button">&#9776;</button>
+					<a class="navbar-brand" href="{{ path('get.home') }}">
+						<img class="logo-dark" src="{{ asset('img/logo-amec-dark-nav.png') }}" width="135" alt="logo" />
+						<img class="logo-light" src="{{ asset('img/logo-amec-light-nav.png') }}" width="135" alt="logo" />
+					</a>
+				</div>
+				<section class="navbar-mobile">
+					<ul class="nav nav-navbar ml-auto">
+						<li class="nav-item"><a class="nav-link" href="{{ path('get.home.acerca') }}">Acerca de AMEC</a></li>
+						<li class="nav-item"><a class="nav-link" href="{{ path('get.home.beneficios') }}">Beneficios AMEC</a></li>
+						<li class="nav-item"><a class="nav-link" href="{{ path('get.home.requisitos') }}">Requisitos</a></li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">On Demand <span class="arrow"></span></a>
+							<nav class="nav">
+								<a class="nav-link" href="{{ path('get.home.calendario_eventos') }}"><i class="ti-angle-right"></i> Calendario de Eventos</a>
+								<a class="nav-link" href="{{ path('get.socios.ondemand.eventos_anteriores') }}"><i class="ti-angle-right"></i> Eventos Anteriores</a>
+							</nav>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="{{ path('get.home.contacto') }}">Contacto</a></li>
+						<li class="nav-item">
+						{% if app.user %}
+							<a class="nav-link success" href="{{ path('app_logout') }}" title="Cerrar sesión">
+								{{ app.user.nombre }} <i class="ti-share"></i> 
+							</a>
+						{% else %}
+							<a class="nav-link success" href="{{ path('app_login') }}"><i class="ti-user"></i> Iniciar sesión</a>
+						{% endif %}
+						</li>
+					</ul>
+				</section>
+
+			</div>
+		</nav>

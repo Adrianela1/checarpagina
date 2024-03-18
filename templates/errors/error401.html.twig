@@ -1,0 +1,26 @@
+{% extends 'html_structure/baseContent.twig.html' %}
+
+{# Nombre de Página #}
+{% block page %}Contáctenos{% endblock %}
+
+{# Css extras #}
+{% block css_extras %}{% endblock %}
+
+{% block page_contents %}
+<section class="section">
+	<div class="container">
+		<div class="col-lg-12">
+			<div class="mt-5 text-center">
+				<h1>Acceso no autorizado</h1>
+				<p>
+					Para poder ingresar a este contenido debe <a href="{{ path('app_login') }}">iniciar sesión</a>.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
+
+{# js extras #}
+{% block js_extras %}
+{% endblock %}

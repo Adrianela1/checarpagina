@@ -1,0 +1,65 @@
+{% extends 'html_structure/baseContent.twig.html' %}
+
+{# Nombre de Página #}
+{% block page %}Acerca de Nostros{% endblock %}
+
+{# Css extras #}
+{% block css_extras %}{% endblock %}
+
+{# Contenido de Página #}
+{% block page_contents %}
+<main class="main-content">
+			<!--
+			|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+			| Populate the page
+			|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+			!-->
+			<section class="section">
+				<div class="container">
+					<header class="section-header">
+						<small>A M E C</small>
+						<p class="text-center"><img src="{{ asset('img/amec-logo-med.png') }}" width="300"></p>
+						<h2>Beneficios de ser parte de AMEC</h2>
+						<hr>
+						<p class="lead-3">Afiliate a la Asociación Mexicana para el estudio del Climaterio</p>
+					</header>
+
+
+					<div class="row">
+						<div class="col-lg-8 mx-auto text-justify">
+							<h4 class="text-center m-5">Beneficios</h4>
+							<p class="lead-1">
+								<i class="ti-check text-success mr-2"></i> Constancia que lo acredita como socio <strong>AMEC</strong> con valor curricular anual para la recertificación del Consejo Mexicano de Ginecología y Obstetricia.
+							</p>
+							<p class="lead-1">
+								<i class="ti-check text-success mr-2"></i> Pertenecer a la asociación mas representativa del climaterio en México y reconocida a nivel internacional, con afiliación a <strong>IMS, FLASCYM Y NAMS</strong>.
+							</p>
+							<p class="lead-1">
+								<i class="ti-check text-success mr-2"></i> Beca completa para todos los cursos, talleres, congresos y actividades académicas organizadas por la <strong>AMEC</strong>, así como posibles becas de asociaciones afiliadas.
+							</p>
+							<p class="lead-1">
+								<i class="ti-check text-success mr-2"></i> Posibilidad de participar activamente en actividades docentes, comités y comisiones internas, entre otras, en representación de AMEC.
+							</p>
+							<p class="lead-1">
+								<i class="ti-check text-success mr-2"></i> Tener voz y voto en las Asambleas del <strong>AMEC</strong> y poder aspirar a puestos de elección.
+							</p>
+							<p class="lead-1">
+								<i class="ti-check text-success mr-2"></i> Apoyo en difusión de actividades académicas propias de los asociados y de las sociedades afiliadas a <strong>AMEC</strong>.
+							</p>
+							<p class="lead-1">
+								<i class="ti-check text-success mr-2"></i> Acceso a la plataforma de archivos exclusiva para socios donde podrán consultar Guias de Práctica Clínica, revistas de climaterio y presentaciones de ponencias, entre otros.
+							</p>
+							<p class="lead-1">
+								<i class="ti-check text-success mr-2"></i> Derecho a cursar los eventos disponibles <strong>"AMEC On Demand"</strong> con puntaje para la re-certificación del <strong>Consejo Mexicano de Ginecología y Obstetricia</strong>.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+{% endblock %}
+
+{# js extras #}
+{% block js_extras %}
+{% endblock %}

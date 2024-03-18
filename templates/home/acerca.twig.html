@@ -1,0 +1,48 @@
+{% extends 'html_structure/baseContent.twig.html' %}
+
+{# Nombre de Página #}
+{% block page %}Acerca de Nostros{% endblock %}
+
+{# Css extras #}
+{% block css_extras %}{% endblock %}
+
+{# Contenido de Página #}
+{% block page_contents %}
+<main class="main-content">
+			<!--
+			|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+			| Populate the page
+			|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+			!-->
+			<section class="section">
+				<div class="container">
+					<header class="section-header">
+						<small>A M E C</small>
+						<h2>Acerca de Nosotros</h2>
+						<hr>
+					</header>
+
+
+					<div class="row">
+						<div class="col-lg-8 mx-auto">
+							<p class="text-center"><img src="{{ asset('img/amec-logo-med.png') }}" width="400"></p>
+							<p class="lead-1">
+								<strong>AMEC</strong> Es una organización científica no lucrativa, interesada en el estudio y la difusión de los cambios que sufre la mujer durante la etapa del climaterio y la posmenopausia.
+							</p>
+							<p>
+								<strong>Misión.-</strong> Organizar actividades de educación médica continua de muy alta calidad, dirigidas a médicos especialistas, generales, familiares y a otros profesionales de la salud, interesados en aumentar su conocimiento sobre la salud de la mujer en la etapa del climaterio y la posmenopausia, con el propósito de mejorar la calidad de la atención de sus pacientes.
+							</p>
+							<p>
+								<strong>Visión.-</strong> Ser la asociación médica de mayor prestigio en la organización de cursos de educación médica continua relacionados con la salud femenina en la etapa del climaterio y la posmenopausia.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+{% endblock %}
+
+{# js extras #}
+{% block js_extras %}
+{% endblock %}

@@ -1,0 +1,135 @@
+{% extends 'html_structure/baseContent.twig.html' %}
+
+{# Nombre de Página #}
+{% block page %}Requisitos{% endblock %}
+
+{# Css extras #}
+{% block css_extras %}{% endblock %}
+
+{# Contenido de Página #}
+{% block page_contents %}
+<main class="main-content">
+			<!--
+			|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+			| Populate the page
+			|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+			!-->
+			<section class="section">
+				<div class="container">
+					<header class="section-header">
+						<small>A M E C</small>
+						<p class="text-center"><img src="{{ asset('img/amec-logo-med.png') }}" width="300"></p>
+						<h2>Requisitos para ser parte de AMEC</h2>
+						<hr>
+						<p class="lead-3">Afiliate a la Asociación Mexicana para el estudio del Climaterio</p>
+						<div class="alert alert-primary"><span class="badge badge-pill badge-primary"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> NOTA:</span> <span class="lead-1">La documentación puede ser enviada de manera digital por correo electrónico.</span></div>
+					</header>
+
+
+					<div class="row">
+						<div class="col-lg-4 pb-5 mx-auto">
+							<div class="card border hover-shadow-4" style="min-height: 350px;">
+                				<div class="card-body">
+									<p><i class="fa fa-user-circle-o text-danger lead-7"></i></p>
+									<h4>Socio Titular</h4>
+									<p>
+										<i class="ti-check text-success mr-2"></i> Titulo de Médico Cirujano.<br/>
+										<i class="ti-check text-success mr-2"></i> Diploma de Especialidad (de ser el caso).<br/>
+										<i class="ti-check text-success mr-2"></i> Cedula Profesional de Medico Cirujano.<br/>
+										<i class="ti-check text-success mr-2"></i> Cedula de Especialidad (de ser el caso).<br/>
+										<i class="ti-check text-success mr-2"></i> Llenar la solicitud de ingreso<br/>
+										<i class="ti-check text-success mr-2"></i> Anexar 1 fotografía digital o tamaño infantil.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 pb-5 mx-auto text-justify">
+							<div class="card border hover-shadow-4" style="min-height: 395px;">
+                				<div class="card-body">
+									<p><i class="fa fa-users text-danger lead-7"></i></p>
+									<h4>Socio Adjunto</h4>
+									<p>
+										<i class="ti-check text-success mr-2"></i> Titulo de Profesionista relacionado a la salud y/o climaterio.<br/>
+										<i class="ti-check text-success mr-2"></i> Cédula Profesional.<br/>
+										<i class="ti-check text-success mr-2"></i> Cédula de Especialidad (de ser el caso).<br/>
+										<i class="ti-check text-success mr-2"></i> Llenar la solicitud de ingreso<br/>
+										<i class="ti-check text-success mr-2"></i> Anexar 1 fotografía digital o tamaño infantil.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 pb-5 mx-auto text-justify">
+							<div class="card border hover-shadow-4" style="min-height: 395px;">
+                				<div class="card-body">
+									<p><i class="fa fa-user-plus text-danger lead-7"></i></p>
+									<h4>Socios Nuevos</h4>
+									<p>
+										<i class="ti-check text-success mr-2"></i> Descargar Solicitud en PDF<br/>
+										<i class="ti-check text-success mr-2"></i> Enviar la solcitud con sus datos por correo a: <a href="mailto:contacto@amec.mx">contacto@amec.mx</a><br/>
+									</p>
+									<a class="btn btn-primary btn-round btn-block" href="{{ asset('docs/solicitud-para-socio.pdf')}}" target="_blank"><i class="fa fa-file-text-o" aria-hidden="true"></i> Descargar Solicitud</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 pb-5 mx-auto text-justify">
+							<div class="card border hover-shadow-4" style="min-height: 395px;">
+                				<div class="card-body">
+									<p><i class="fa fa-tags text-danger lead-7"></i></p>
+									<h4>Costos AMEC</h4>
+									<p>
+										Inscripción: $ 500.00<br/>
+										Anualidad: $2,000.00
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 pb-5 mx-auto text-justify">
+							<div class="card border hover-shadow-4" style="min-height: 395px;">
+                				<div class="card-body">
+									<p><i class="fa fa-paperclip text-danger lead-7"></i></p>
+									<h4>Deposito o Transferencia</h4>
+									<p><strong>Datos Bancarios:</strong><br/>
+										Beneficiario: Asociación Mexicana para el Estudio del Climaterio AC<br/>
+										Banco: BBVA<br/>
+										Cuenta: 0194018532<br/>
+										Clabe: 012180001940185329
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 pb-5 mx-auto">
+							<div class="card border hover-shadow-4" style="min-height: 395px;">
+                				<div class="card-body">
+									<p><i class="fa fa-paypal text-danger lead-7"></i></p>
+									<h4>Pago en Línea vía Pay Pal</h4>
+									<p>
+										Inscripción: $ 500.00<br/>
+										Anualidad: $2,000.00
+									</p>
+									<div id="smart-button-container">
+										<div style="text-align: center;">
+											<div style="margin-bottom: 1.25rem;">
+												<p>CUOTAS</p>
+												<select id="item-options">
+													<option value="ANUALIDAD " price="2000">ANUALIDAD  - 2000 MXN</option>
+													<option value="INSCRIPCIÓN Y ANUALIDAD " price="2500">INSCRIPCIÓN Y ANUALIDAD  - 2500 MXN</option></select>
+												<select style="visibility: hidden" id="quantitySelect"></select>
+											</div>
+											<div id="paypal-button-container"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+{% endblock %}
+
+{# js extras #}
+{% block js_extras %}
+<script src="https://www.paypal.com/sdk/js?client-id=AZ6t2RCvhjks-DUvnMS1ViagQHLi3p_4Asb2vC203GafEQW4c4zRZIHAgGrXicapxPYYt4MQlVzQ1FbI&enable-funding=venmo&currency=MXN" data-sdk-integration-source="button-factory"></script>
+	<script type="text/javascript" src="{{ asset ('js/ppalBtn.js')}}"></script>
+{% endblock %}

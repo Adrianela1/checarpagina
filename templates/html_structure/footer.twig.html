@@ -1,0 +1,26 @@
+<footer class="footer">
+            <div class="container">
+                <div class="row gap-y align-items-top">
+
+                    <div class="col-lg-2">
+                        <a href="index.html"><img src="{{ asset('img/amec-logo-sm.png') }}" alt="logo"></a>
+                    </div>
+                    <div class="col-lg-2">
+                        <p class="address">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i> World Trade Center (WTC) Montecito 38, Piso 14, Oficina 5 , Nápoles,Benito Juárez, 03810, Ciudad de México.<br/><br/>
+                            Derechos Reservados &reg; {{ "now"|date("Y") }}
+                        </p>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="nav nav-bold nav-uppercase nav-trim justify-content-lg-center">
+                            <a class="nav-link" href="{{ path('get.home') }}">Home</a>
+                            <a class="nav-link" href="{{ path('get.home.acerca') }}">Acerca de AMEC</a>
+                            <a class="nav-link" href="{{ path('get.home.beneficios') }}">Beneficios AMEC</a>
+                            <a class="nav-link" href="{{ path('get.home.requisitos') }}">Requisitos</a>
+                            <a class="nav-link" href="{{ path('get.home.contacto') }}">Contacto</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>

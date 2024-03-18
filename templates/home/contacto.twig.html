@@ -1,0 +1,50 @@
+{% extends 'html_structure/baseContent.twig.html' %}
+
+{# Nombre de Página #}
+{% block page %}Contáctenos{% endblock %}
+
+{# Css extras #}
+{% block css_extras %}{% endblock %}
+
+{# Contenido de Página #}
+{% block page_contents %}
+<main class="main-content">
+			<!--
+			|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+			| Populate the page
+			|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+			!-->
+			<section class="section">
+				<div class="container">
+					<header class="section-header">
+						<small>A M E C</small>
+						<h2>Contáctenos</h2>
+						<hr>
+					</header>
+
+
+					<div class="row">
+						<div class="col-lg-8 mx-auto text-center">
+							<img src="{{ asset('img/amec-logo-med.png') }}"><br/>
+							<img src="{{ asset('img/wtc-logo.png') }}" width="200">
+							<p class="gap-xy m-5">
+								<a class="btn btn-lg btn-round btn-danger w-280" href="mailto:contacto@amec.mx">¡Contactar Ahora!</a>
+							</p>
+							<p>
+								<strong>Asociación Mexicana para el estudio del Climaterio A.C.</strong><br/>
+								World Trade Center<br/>
+								Montecito 38 Piso 14 Oficina 5<br/>
+								Col. Nápoles, Benito Juárez,<br/>
+								Ciudad de México
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+{% endblock %}
+
+{# js extras #}
+{% block js_extras %}
+{% endblock %}

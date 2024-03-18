@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        {{ include ('html_structure/metas.twig.html')}}
+        <title>{% block company %}Asociación Mexicana para el Estudio del Climaterio{% endblock %} - {% block page %}{% endblock %}</title>
+
+        <!-- Styles -->
+        {{ include ('html_structure/css.twig.html')}}
+        {% block css_extras %}{% endblock %}
+
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" href="{{ asset('img/apple-touch-icon.png') }}" />
+        <link rel="icon" href="{{ asset('img/favicon.png') }}" />
+    </head>
+
+    <body>
+        <!-- nav -->    
+        {{ include ('html_structure/nav.twig.html')}}
+        <!-- /.nav -->   
+
+        <!-- Header -->
+        {{ include ('html_structure/header.twig.html')}}
+        <!-- /.header -->
+
+        <!-- MainContent --> 
+        {% block page_contents %}
+        {% endblock %}
+        <!-- /.MainContent -->
+
+        <!-- Footer -->
+        {{ include ('html_structure/footer.twig.html')}}
+        <!-- /.footer -->  
+
+        <!-- Scripts -->
+        {{ include ('html_structure/js.twig.html')}}
+        {% block js_extras %}{% endblock %}
+        <!-- /.Scripts -->
+    </body>
+</html>

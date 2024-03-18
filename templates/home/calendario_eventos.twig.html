@@ -1,0 +1,56 @@
+{% extends 'html_structure/baseContent.twig.html' %}
+
+{# Nombre de Página #}
+{% block page %}Calendario Eventos AMEC{% endblock %}
+
+{# Css extras #}
+{% block css_extras %}{% endblock %}
+
+{# Contenido de Página #}
+{% block page_contents %}
+<main class="main-content">
+			<!--
+			|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+			| Populate the page
+			|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+			!-->
+			<section class="section">
+				<div class="container">
+					<header class="section-header">
+						<small>A M E C</small>
+						<h2>Calendario de Eventos AMEC</h2>
+						<img src="{{ asset('img/asofarma-logo.png') }}" width="280" class="mb-3"><br/>
+							<img src="{{ asset('img/myrbetric.png') }}" width="200" class="m-3"><img src="{{ asset('img/mictasol.png') }}" width="200" class="m-3"><img src="{{ asset('img/vesicare.png') }}" width="200" class="m-3">
+						<hr>
+						<p class="lead-3">Fechas Eventos 2022</p>
+					</header>
+
+
+					<div class="row">
+						<div class="col-lg-8 mx-auto text-justify">
+							<p class="lead-1"><span class="iconbox iconbox-outline iconbox-xs"><i class="fa fa-calendar"></i></span> 12 de Marzo, 2022</p>
+							<h5><small><strong>Sabatino</strong> | Actualidades en la Terapia Hormonal de la Menopausia</small><br/>
+							"Comorbilidad en menopausia, bases moleculares y clínicas"</h5>
+							<hr>
+							<p class="lead-1"><span class="iconbox iconbox-outline iconbox-xs"><i class="fa fa-calendar"></i></span> 11 de junio</p>
+							<h5>Sabatino</h5>
+							<hr>
+							<p class="lead-1"><span class="iconbox iconbox-outline iconbox-xs"><i class="fa fa-calendar"></i></span> 8 al 10 de septiembre</p>
+							<h5>Congreso Nacional</h5>
+							<hr>
+							<p class="lead-1"><span class="iconbox iconbox-outline iconbox-xs"><i class="fa fa-calendar"></i></span> 8 de octubre</p>
+							<h5>Sabatino</h5>
+							<hr>
+							<p class="lead-1"><span class="iconbox iconbox-outline iconbox-xs"><i class="fa fa-calendar"></i></span> 11 y 12 de noviembre</p>
+							<h5>Congreso Regional</h5>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+{% endblock %}
+
+{# js extras #}
+{% block js_extras %}
+{% endblock %}

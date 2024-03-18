@@ -1,0 +1,40 @@
+{% extends 'base.twig.html' %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        {% block metas %}
+        {% endblock %}
+
+        <title>{% block title %}{% endblock %} - {% block companytitle %}{% endblock %}</title>
+
+        {% block stylesheets %}
+        {% endblock %}
+
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" href="{% block favicon %}{% endblock %}" />
+        <link rel="icon" href="{{ asset('img/favicon.png') }}" />
+    </head>
+
+    <body>      
+        {% block navbar %}
+        {% endblock %}
+
+        <!-- Header -->
+        {% block header %}
+        {% endblock %}
+        <!-- /.header -->
+
+        {% block main %}
+        {% endblock %}
+
+        <!-- Footer -->
+        {% block footer %}
+        {% endblock %}
+
+        <!-- Scripts -->
+        {% block js %}
+        {% endblock %}
+    </body>
+</html>
